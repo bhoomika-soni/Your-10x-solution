@@ -1,0 +1,24 @@
+{
+  "name": "job-match-tracker",
+  "version": "1.0.0",
+  "description": "Job application tracker with AI resume-to-job-description match scoring. FlyRank Internship capstone — Your 10x Solution.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "openai": "^4.56.0",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  }
+}
